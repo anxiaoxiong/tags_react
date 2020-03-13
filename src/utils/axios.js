@@ -50,6 +50,7 @@ export default {
                   if (resTemp && resTemp.code === 200) {
                     resolve(resTemp);
                   } else {
+                    alert(resTemp.message);
                     reject(resTemp);
                   }
                 }
@@ -75,6 +76,7 @@ export default {
                 if (resTemp && resTemp.code === 200) {
                   resolve(resTemp);
                 } else {
+                  alert(resTemp.message);
                   reject(resTemp);
                 }
               }
@@ -101,6 +103,7 @@ export default {
                 if (resTemp && resTemp.code === 200) {
                   resolve(resTemp);
                 } else {
+                  alert(resTemp.message);
                   reject(resTemp);
                 }
               }
@@ -126,6 +129,7 @@ export default {
                 if (resTemp && resTemp.code === 200) {
                   resolve(resTemp);
                 } else {
+                  alert(resTemp.message);
                   reject(resTemp);
                 }
               }

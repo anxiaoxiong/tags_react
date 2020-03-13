@@ -38,6 +38,7 @@ export default class Tag extends Component {
         console.log(res);
         if (res.code === 200) {
           alert(res.message);
+          this.setState({name:'',individual_id:'',id:0});
           this.loadData();
         }
       }).catch(e => {
@@ -62,6 +63,7 @@ export default class Tag extends Component {
       if (res.code === 200) {
        alert(res.message);
        this.loadData();
+       this.setState({name:'',individual_id:'',id:0});
       }
     }).catch(e => {
       console.log(e);
@@ -93,7 +95,7 @@ export default class Tag extends Component {
             })}
           </div>
           <p className="foot">
-            增加标签：
+            增加/修改标签：
             标签名字：<input type="text" value={name} onChange={(v)=>{this.changeName(v)}}/>
             所属ID：<input type="text" value={individual_id} onChange={(v)=>{this.changeIndividualId(v)}}/>
             <button onClick={()=>{this.submit()}}>提交</button>
